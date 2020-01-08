@@ -1,4 +1,4 @@
-//"rce" snippet for reacr,class,export
+//"rce" snippet for react,class,export
 //"rconst" for constructor
 import React, { Component } from 'react'
 
@@ -42,4 +42,4 @@ export default Count
 //Points to remember:
 //1.Always make use of setState and never modify directlt
 //2.if the code has to be executed after the state has been updated ,then use the code in the callback as second argument of setstate
-//3.when you have to update state based objecton previous value ,pass in a function as an argument instead of regular object.
+//3.when you have to update state based object on previous value ,pass in a function as an argument instead of regular object.

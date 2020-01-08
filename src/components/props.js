@@ -12,9 +12,9 @@ const Hello=props=>{
     )
 }
 
-//Same ting using class
-//this.props are used access  data
-//This.props values cannot be changed
+//Same thing using class
+//this.props are used  to access  data
+//this.props values cannot be changed
 
 // class Hello extends Component{
 //     render(){

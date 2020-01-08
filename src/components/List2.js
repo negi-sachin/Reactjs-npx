@@ -1,5 +1,9 @@
-import React from 'react'
+//while using list in react ,we got some error regarding key as in list1.js occur
+//to prvent this,we use 'key' as an prop for component 
+//key value should be unique ,can be number ,string
 
+import React from 'react'
+import Person  from "./person";
 function List2() {
     const persons=[
         {  
@@ -32,7 +36,7 @@ function List2() {
     return (
         <div>
          {
-             persons.map(person=><p>{person.name} has salary {person.salary} and is {person.married?"married":"not married"}</p>)
+             persons.map(person=><Person key={person.name} person={person}/>)
          }  
          <hr></hr>          
         </div>
