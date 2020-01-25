@@ -29,6 +29,8 @@ import Refs from './components/Refs';
 import Portal from './components/Portal';
 import Hero from './components/Hero';
 import Err_Boundary from './components/Err_Boundary';
+import HOC1 from './components/HOC1';
+import  HOC2  from './components/HOC2';
 
 function App() {
   return (
@@ -85,7 +87,10 @@ function App() {
      {/* change heroname to "Joker " to see error */}
     {/* Error boundary is available in production mode ,so on top right click cross button to see result */}
      
-     
+     <HOC1/>
+     <HOC2/>
+     {/* In HOC if we add props here then they will b pass to HOC.js not to HOC1 or HOC2,
+     therefore in HOC.js give {...this.props} as a last prop in <originalcomponent/> to make it work accordingly */}
     </div>
   );
 }
